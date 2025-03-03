@@ -8,7 +8,7 @@ from logging.handlers import RotatingFileHandler
 load_dotenv()
 
 #Bot token @Botfather
-TG_BOT_TOKEN = os.environ.get("TG_BOT_TOKEN", "")
+TG_BOT_TOKEN = os.environ.get("TG_BOT_TOKEN", "7606302044:AAGpSoP3zJVp5g6zbJ3Lu-hJ6I3nJDKPfV4")
 
 #Your API ID from my.telegram.org
 APP_ID = int(os.environ.get("APP_ID", ""))
@@ -55,12 +55,12 @@ CUSTOM_CAPTION = os.environ.get("CUSTOM_CAPTION", None)
 PROTECT_CONTENT = True if os.environ.get('PROTECT_CONTENT', "False") == "True" else False
 
 # Auto delete time in seconds.
-AUTO_DELETE_TIME = int(os.getenv("AUTO_DELETE_TIME", "0"))
+AUTO_DELETE_TIME = int(os.getenv("AUTO_DELETE_TIME", "20"))
 AUTO_DELETE_MSG = os.environ.get("AUTO_DELETE_MSG", "This file will be automatically deleted in {time} seconds. Please ensure you have saved any necessary content before this time.")
 AUTO_DEL_SUCCESS_MSG = os.environ.get("AUTO_DEL_SUCCESS_MSG", "Your file has been successfully deleted. Thank you for using our service. ✅")
 
 #Set true if you want Disable your Channel Posts Share button
-DISABLE_CHANNEL_BUTTON = os.environ.get("DISABLE_CHANNEL_BUTTON", None) == 'True'
+DISABLE_CHANNEL_BUTTON = os.environ.get("DISABLE_CHANNEL_BUTTON", 'True') == 'True'
 
 BOT_STATS_TEXT = "<b>BOT UPTIME</b>\n{uptime}"
 USER_REPLY_TEXT = "❌Don't send me messages directly I'm only File Share bot!"
